@@ -1,5 +1,6 @@
 import { Meta, Story } from '@storybook/react';
-import Checkbox from '../src/components/Checkbox/Checkbox';
+import React from 'react';
+import Checkbox from './Checkbox';
 
 const meta: Meta = {
   title: 'Checkbox',
@@ -8,17 +9,17 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (args) => <Checkbox {...args} />;
+const Template: Story = (args) => <Checkbox label checkboxStyle {...args} />;
 
 export const Default = Template.bind({});
 export const Disabled = Template.bind({});
 
 Default.args = {
-  variant: 'Default',
+  checkboxStyle: 'chk--primary',
   label: 'Default ',
 };
 
 Disabled.args = {
-  variant: 'Disabled',
+  checkboxStyle: 'chk--disabled',
   label: 'Disabled ',
 };

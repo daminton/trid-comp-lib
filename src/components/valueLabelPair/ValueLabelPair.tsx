@@ -1,12 +1,19 @@
 import React from 'react';
 
-const ValueLabelPair = (props: any) => {
-  const { className, labelText, valueText } = props;
+export interface Props {
+  className: string;
+  label: string;
+  value: any;
+}
+
+const ValueLabelPair = ({ className, label, value }: Props) => {
   return (
     <div className={className}>
-      <div>
-        <label>{labelText}</label>
-        <div>{valueText}</div>
+      <div
+        style={{ display: className === 'Stacked' ? 'inline-block' : 'flex' }}
+      >
+        <label>{label} </label>
+        <div>{value}</div>
       </div>
     </div>
   );

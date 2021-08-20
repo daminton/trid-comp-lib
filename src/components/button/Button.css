@@ -1,0 +1,49 @@
+:root {
+  --primary: black;
+  --secondary: gray;
+}
+
+.btn {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 'none';
+  border-radius: 100;
+  padding: 10;
+}
+
+.btn--secondary {
+  background-color: var(--secondary);
+  color: var(--secondary);
+  border: 'none';
+  border-radius: 100;
+  padding: 10;
+}
+.btn--disabled {
+  background-color: #cccccc;
+  color: var(--white);
+  border: 'none';
+  border-radius: 100;
+  padding: 10;
+  cursor: not-allowed;
+}
+
+.btn--disabled:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: gray;
+}
+
+.btn--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.btn--large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
