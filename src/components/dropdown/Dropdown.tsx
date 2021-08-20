@@ -1,10 +1,10 @@
 import React from 'react';
 
-export interface Props {
+export interface DropdownProps {
   tabs: Array<any>;
 }
 
-const Dropdown = ({ tabs }: Props) => {
+const Dropdown = ({ tabs }: DropdownProps) => {
   return (
     <div>
       <select>

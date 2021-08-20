@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-export interface Props {
+export interface CheckboxProps {
   label: any;
   checkboxStyle: any;
 }
 
 const STYLES = ['chk--primary', 'chk--disabled'];
 
-const Checkbox = ({ label, checkboxStyle }: Props) => {
+const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
   const [checked, setChecked] = useState(false);
   const handleClick = () => setChecked(!checked);
 

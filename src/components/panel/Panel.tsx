@@ -1,11 +1,11 @@
 import React from 'react';
 
-export interface Props {
+export interface PanelProps {
   className: string;
   style: any;
 }
 
-const Panel = ({ className, style }: Props) => {
+const Panel = ({ className, style }: PanelProps) => {
   return <div className={className} style={style}></div>;
 };
 

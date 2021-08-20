@@ -1,7 +1,7 @@
 import React from 'react';
-import './Button.css';
+require('./Button.css');
 
-export interface Props {
+export interface ButtonProps {
   buttonName: any;
   onClick: any;
   buttonStyle: any;
@@ -12,7 +12,12 @@ const STYLES = ['btn--primary', 'btn--secondary', 'btn--disabled'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-const Button = ({ buttonName, onClick, buttonStyle, buttonSize }: Props) => {
+const Button = ({
+  buttonName,
+  onClick,
+  buttonStyle,
+  buttonSize,
+}: ButtonProps) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];

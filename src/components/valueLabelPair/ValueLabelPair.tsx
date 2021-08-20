@@ -1,12 +1,12 @@
 import React from 'react';
 
-export interface Props {
+export interface ValueLabelPairProps {
   className: string;
   label: string;
   value: any;
 }
 
-const ValueLabelPair = ({ className, label, value }: Props) => {
+const ValueLabelPair = ({ className, label, value }: ValueLabelPairProps) => {
   return (
     <div className={className}>
       <div

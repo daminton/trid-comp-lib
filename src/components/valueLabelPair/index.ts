@@ -1,4 +1,4 @@
-import ValueLabelPair from './ValueLabelPair';
+import { ValueLabelPair } from './ValueLabelPair';
 
 export * from './ValueLabelPair';
 
