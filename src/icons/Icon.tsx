@@ -8,4 +8,4 @@ const Icon = ({ variant }: Props) => {
   return <div>{variant}</div>;
 };
 
-export default Icon;
+export { Icon };

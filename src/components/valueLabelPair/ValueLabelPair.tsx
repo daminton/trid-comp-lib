@@ -19,4 +19,4 @@ const ValueLabelPair = ({ className, label, value }: Props) => {
   );
 };
 
-export default ValueLabelPair;
+export { ValueLabelPair };

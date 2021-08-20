@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Panel from './Panel';
+import { Panel } from './Panel';
 
 const meta: Meta = {
   title: 'Panel',

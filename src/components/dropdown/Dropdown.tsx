@@ -16,4 +16,4 @@ const Dropdown = ({ tabs }: Props) => {
   );
 };
 
-export default Dropdown;
+export { Dropdown };

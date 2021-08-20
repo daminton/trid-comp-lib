@@ -28,4 +28,4 @@ const Button = ({ buttonName, onClick, buttonStyle, buttonSize }: Props) => {
   );
 };
 
-export default Button;
+export { Button };

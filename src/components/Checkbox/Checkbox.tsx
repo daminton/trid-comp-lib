@@ -32,4 +32,4 @@ const Checkbox = ({ label, checkboxStyle }: Props) => {
   );
 };
 
-export default Checkbox;
+export { Checkbox };

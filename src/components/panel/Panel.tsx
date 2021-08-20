@@ -9,4 +9,4 @@ const Panel = ({ className, style }: Props) => {
   return <div className={className} style={style}></div>;
 };
 
-export default Panel;
+export { Panel };

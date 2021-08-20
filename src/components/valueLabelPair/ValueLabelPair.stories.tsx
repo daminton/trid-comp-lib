@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import ValueLabelPair from './ValueLabelPair';
+import { ValueLabelPair } from './ValueLabelPair';
 
 const meta: Meta = {
   title: 'ValueLabelPair',

@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import Dropdown from './Dropdown';
+import { Dropdown } from './Dropdown';
 
 const meta: Meta = {
   title: 'Dropdown',
