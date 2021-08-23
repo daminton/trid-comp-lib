@@ -1,6 +1,6 @@
 {
   "name": "trid-comp-lib",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -61,6 +61,10 @@
     "@types/react-dom": "^17.0.9",
     "babel-loader": "^8.2.2",
     "husky": "^7.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "less": "^4.1.1",
+    "postcss": "^8.3.6",
+    "postcss-modules": "^4.2.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
@@ -85,6 +89,8 @@
     "@storybook/addon-viewport": "^6.3.7",
     "@storybook/core": "^6.3.7",
     "@storybook/react-docgen-typescript-plugin": "^1.0.1",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^5.0.8",
     "storybook-addon-outline": "^1.4.1"
   }
 }

@@ -10,7 +10,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story = (args) => (
-  <Button buttonName onClick buttonStyle buttonSize {...args} />
+  <Button buttonName="" onClick buttonStyle buttonSize {...args} />
 );
 
 export const Primary = Template.bind({});
