@@ -1,0 +1,7 @@
+.stacked {
+  display: inline-block;
+}
+
+.inline {
+  display: flex;
+}

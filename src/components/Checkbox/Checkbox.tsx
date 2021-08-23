@@ -16,11 +16,7 @@ const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
     : STYLES[0];
 
   return (
-    <label
-      style={{
-        display: checkboxStyle === 'inline' ? 'inline' : 'block',
-      }}
-    >
+    <label>
       <span>{label}</span>
       <input
         className={`chk ${checkCheckboxStyle}`}

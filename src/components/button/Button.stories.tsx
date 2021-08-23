@@ -13,11 +13,35 @@ const Template: Story = (args) => (
   <Button buttonName onClick buttonStyle buttonSize {...args} />
 );
 
+export const LargePrimary = Template.bind({});
+
+export const LargeSecondary = Template.bind({});
+
+export const LargeDisabled = Template.bind({});
+
 export const Primary = Template.bind({});
 
 export const Secondary = Template.bind({});
 
 export const Disabled = Template.bind({});
+
+LargePrimary.args = {
+  buttonName: 'LargePrimary',
+  buttonStyle: 'btn--primary',
+  buttonSize: 'btn--large',
+};
+
+LargeSecondary.args = {
+  buttonName: 'LargeSecondary',
+  buttonStyle: 'btn--secondary',
+  buttonSize: 'btn--large',
+};
+
+LargeDisabled.args = {
+  buttonName: 'LargeDisabled',
+  buttonStyle: 'btn--disabled',
+  buttonSize: 'btn--large',
+};
 
 Primary.args = {
   buttonName: 'primary',
@@ -28,7 +52,7 @@ Primary.args = {
 Secondary.args = {
   buttonName: 'secondary',
   buttonStyle: 'btn--secondary',
-  buttonSize: 'btn--small',
+  buttonSize: 'btn--medium',
 };
 
 Disabled.args = {

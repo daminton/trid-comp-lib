@@ -1,17 +1,19 @@
 import React from 'react';
+import './ValueLabelPair.css';
 
 export interface ValueLabelPairProps {
-  className: string;
+  variant: any;
   label: string;
   value: any;
 }
 
-const ValueLabelPair = ({ className, label, value }: ValueLabelPairProps) => {
+const STYLES = ['stacked', 'inline'];
+
+const ValueLabelPair = ({ variant, label, value }: ValueLabelPairProps) => {
+  const checkVariant = STYLES.includes(variant) ? variant : STYLES[0];
   return (
-    <div className={className}>
-      <div
-        style={{ display: className === 'Stacked' ? 'inline-block' : 'flex' }}
-      >
+    <div>
+      <div className={`vlp ${checkVariant}`}>
         <label>{label} </label>
         <div>{value}</div>
       </div>

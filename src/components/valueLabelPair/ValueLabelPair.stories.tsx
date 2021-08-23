@@ -10,20 +10,20 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story = (args) => (
-  <ValueLabelPair className="" label="" value {...args} />
+  <ValueLabelPair variant label="" value {...args} />
 );
 
 export const Inline = Template.bind({});
 export const Stacked = Template.bind({});
 
 Inline.args = {
-  className: 'Default',
+  variant: 'inline',
   label: 'Default-Label',
   value: 'Default-Value',
 };
 
 Stacked.args = {
-  className: 'Stacked',
+  variant: 'stacked',
   label: 'Stacked-Label',
   value: 'Stacked-Value',
 };

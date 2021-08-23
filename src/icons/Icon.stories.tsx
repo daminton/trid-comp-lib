@@ -4,6 +4,8 @@ import { Icon } from './Icon';
 import { SearchIcon } from './SearchIcon';
 import { CaretIcon } from './CaretIcon';
 import { CompleteIcon } from './CompleteIcon';
+import { ArrowIcon } from './ArrowIcon';
+import { DashboardIcon } from './DashboardIcon';
 
 const meta: Meta = {
   title: 'Icon',
@@ -17,6 +19,8 @@ const Template: Story = (args) => <Icon variant={[]} {...args} />;
 export const Search = Template.bind({});
 export const Caret = Template.bind({});
 export const Complete = Template.bind({});
+export const Arrow = Template.bind({});
+export const Dashboard = Template.bind({});
 
 Search.args = {
   variant: <SearchIcon />,
@@ -28,4 +32,12 @@ Caret.args = {
 
 Complete.args = {
   variant: <CompleteIcon />,
+};
+
+Arrow.args = {
+  variant: <ArrowIcon />,
+};
+
+Dashboard.args = {
+  variant: <DashboardIcon />,
 };
