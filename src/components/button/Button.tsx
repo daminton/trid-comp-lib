@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 
 export interface ButtonProps {
-  buttonName: string;
+  buttonName: any;
   onClick: any;
   buttonStyle: any;
   buttonSize: any;

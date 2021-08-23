@@ -10,7 +10,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story = (args) => (
-  <Button buttonName="" onClick buttonStyle buttonSize {...args} />
+  <Button buttonName onClick buttonStyle buttonSize {...args} />
 );
 
 export const Primary = Template.bind({});
@@ -20,19 +20,19 @@ export const Secondary = Template.bind({});
 export const Disabled = Template.bind({});
 
 Primary.args = {
-  ButtonName: 'primary',
+  buttonName: 'primary',
   buttonStyle: 'btn--primary',
   buttonSize: 'btn--medium',
 };
 
 Secondary.args = {
-  ButtonName: 'secondary',
+  buttonName: 'secondary',
   buttonStyle: 'btn--secondary',
   buttonSize: 'btn--small',
 };
 
 Disabled.args = {
-  ButtonName: 'disabled',
+  buttonName: 'disabled',
   buttonStyle: 'btn--disabled',
   buttonSize: 'btn--medium',
 };

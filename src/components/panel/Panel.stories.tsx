@@ -9,30 +9,15 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story = (args) => <Panel className="" style {...args} />;
+const Template: Story = (args) => <Panel panelStyle {...args} />;
 
 export const Default = Template.bind({});
 export const Radius = Template.bind({});
 
 Default.args = {
-  className: 'panel',
-  style: {
-    backgroundColor: 'black',
-    width: 700,
-    height: 100,
-    padding: 25,
-    border: 25,
-  },
+  panelStyle: 'default',
 };
 
 Radius.args = {
-  className: 'panel',
-  style: {
-    borderRadius: 20,
-    backgroundColor: 'black',
-    width: 700,
-    height: 100,
-    padding: 25,
-    border: 25,
-  },
+  panelStyle: 'radius',
 };

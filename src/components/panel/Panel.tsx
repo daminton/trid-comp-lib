@@ -1,12 +1,15 @@
 import React from 'react';
+import './Panel.css';
 
 export interface PanelProps {
-  className: string;
-  style: any;
+  panelStyle: any;
 }
 
-const Panel = ({ className, style }: PanelProps) => {
-  return <div className={className} style={style}></div>;
+const STYLES = ['default', 'radius'];
+
+const Panel = ({ panelStyle }: PanelProps) => {
+  const checkPanelStyle = STYLES.includes(panelStyle) ? panelStyle : STYLES[0];
+  return <div className={`panel ${checkPanelStyle}`} />;
 };
 
 export { Panel };

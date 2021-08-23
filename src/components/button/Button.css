@@ -1,7 +1,8 @@
-:root {
+/* :root {
   --primary: black;
   --secondary: gray;
 }
+ */
 
 .btn {
   border-radius: 10px;
@@ -10,23 +11,23 @@
 }
 
 .btn--primary {
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: black;
+  color: white;
   border: 'none';
   border-radius: 100;
   padding: 10;
 }
 
 .btn--secondary {
-  background-color: var(--secondary);
-  color: var(--secondary);
+  background-color: gray;
+  color: black;
   border: 'none';
   border-radius: 100;
   padding: 10;
 }
 .btn--disabled {
   background-color: #cccccc;
-  color: var(--white);
+  color: white;
   border: 'none';
   border-radius: 100;
   padding: 10;
