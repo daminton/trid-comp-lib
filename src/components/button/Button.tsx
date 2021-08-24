@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+require('./Button.css');
 
 export interface ButtonProps {
   buttonName: any;

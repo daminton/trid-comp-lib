@@ -1,5 +1,5 @@
 import React from 'react';
-import './Panel.css';
+require('./Panel.css');
 
 export interface PanelProps {
   panelStyle: any;
