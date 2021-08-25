@@ -1,12 +1,12 @@
-INSTALL
+## INSTALL
 
 npm i 'trid-comp-lib'
 
-USAGE
+## USAGE
 
 Custom React component library with storybookJS for documentation
 
-BUTTON EXAMPLE
+## BUTTON EXAMPLE
 
       import { Button } from 'trid-comp-lib';
       import '../node_modules/trid-comp-lib/src/components/button/Button.css';
