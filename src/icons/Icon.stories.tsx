@@ -8,7 +8,7 @@ import { ArrowIcon } from './ArrowIcon';
 import { DashboardIcon } from './DashboardIcon';
 
 const meta: Meta = {
-  title: 'Icon',
+  title: 'Icons',
   component: Icon,
 };
 
