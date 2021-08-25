@@ -1,6 +1,6 @@
 {
   "name": "trid-comp-lib",
-  "version": "0.1.10",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -89,8 +89,6 @@
     "@storybook/addon-viewport": "^6.3.7",
     "@storybook/core": "^6.3.7",
     "@storybook/react-docgen-typescript-plugin": "^1.0.1",
-    "autoprefixer": "^9.8.6",
-    "cssnano": "^5.0.8",
     "storybook-addon-outline": "^1.4.1"
   }
 }

@@ -27,8 +27,8 @@ export const Disabled = Template.bind({});
 
 LargePrimary.args = {
   buttonName: 'LargePrimary',
-  buttonStyle: 'btn--primary',
-  buttonSize: 'btn--large',
+  buttonStyle: 'ButtonPrimary',
+  buttonSize: 'ButtonLarge',
 };
 
 LargeSecondary.args = {
