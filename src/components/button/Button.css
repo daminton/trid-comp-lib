@@ -1,8 +1,6 @@
 /* :root {
-  --primary: black;
-  --secondary: gray;
-}
- */
+  color-scheme: dark;
+} */
 
 .btn {
   border-radius: 10px;
@@ -10,7 +8,7 @@
   transition: transform 0.3s ease;
 }
 
-.btn--primary {
+.btn--dark {
   background-color: black;
   color: white;
   border: 'none';
@@ -18,15 +16,16 @@
   padding: 10;
 }
 
-.btn--secondary {
-  background-color: gray;
+.btn--light {
+  background-color: lightgray;
   color: black;
   border: 'none';
   border-radius: 100;
   padding: 10;
 }
+
 .btn--disabled {
-  background-color: #cccccc;
+  background-color: black;
   color: white;
   border: 'none';
   border-radius: 100;
@@ -34,16 +33,29 @@
   cursor: not-allowed;
 }
 
-.btn--disabled:disabled {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: gray;
+.btn--orchestrate {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 0.9em;
+  margin: 0 20px;
+  border-radius: 40px;
+  color: lightgrey;
+}
+
+.btn--small {
+  padding: 5px 15px;
+  font-size: 16px;
 }
 
 .btn--medium {
   padding: 10px 20px;
   font-size: 18px;
 }
+
 .btn--large {
   padding: 15px 30px;
   font-size: 20px;

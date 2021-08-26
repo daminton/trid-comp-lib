@@ -14,5 +14,5 @@ const Template: Story = (args) => <Dropdown tabs={[]} {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  tabs: ['rawr', 'uWu'],
+  tabs: ['foo', 'bar'],
 };

@@ -13,7 +13,7 @@ Custom React component library with storybookJS for documentation
       import { Button } from 'trid-comp-lib';
       import '../node_modules/trid-comp-lib/src/components/button/Button.css';
       const Button = () => {
-        return(
+        return (
           <Button
             buttonName="primary"
             buttonSize="btn--medium"
@@ -22,3 +22,5 @@ Custom React component library with storybookJS for documentation
           />
         );
       };
+
+      export{ Button }

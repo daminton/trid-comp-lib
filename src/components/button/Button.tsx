@@ -8,9 +8,9 @@ export interface ButtonProps {
   buttonSize: any;
 }
 
-const STYLES = ['btn--primary', 'btn--secondary', 'btn--disabled'];
+const STYLES = ['btn--dark', 'btn--light', 'btn--disabled', 'btn--orchestrate'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--small', 'btn--medium', 'btn--large'];
 
 const Button = ({
   buttonName,

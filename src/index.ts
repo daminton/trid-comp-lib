@@ -9,6 +9,10 @@ import { CaretIcon } from './icons';
 import { CompleteIcon } from './icons';
 import { ArrowIcon } from './icons';
 import { DashboardIcon } from './icons';
+import { SuccessIcon } from './icons';
+import { ActorsIcon } from './icons';
+import { InfoIcon } from './icons';
+import { OverviewIcon } from './icons';
 
 export {
   Icon,
@@ -22,4 +26,8 @@ export {
   CompleteIcon,
   ArrowIcon,
   DashboardIcon,
+  SuccessIcon,
+  ActorsIcon,
+  InfoIcon,
+  OverviewIcon,
 };
