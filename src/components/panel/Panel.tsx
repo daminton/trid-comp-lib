@@ -5,7 +5,7 @@ export interface PanelProps {
   panelStyle: any;
 }
 
-const STYLES = ['default', 'radius'];
+const STYLES = ['default', 'radius', 'small'];
 
 const Panel = ({ panelStyle }: PanelProps) => {
   const checkPanelStyle = STYLES.includes(panelStyle) ? panelStyle : STYLES[0];

@@ -11,15 +11,21 @@ export default meta;
 
 const Template: Story = (args) => <Checkbox label checkboxStyle {...args} />;
 
-export const Default = Template.bind({});
+export const Light = Template.bind({});
 export const Disabled = Template.bind({});
+export const Dark = Template.bind({});
 
-Default.args = {
-  checkboxStyle: 'chk--primary',
-  label: 'Default ',
+Light.args = {
+  checkboxStyle: 'chk--light',
+  label: 'Light ',
 };
 
 Disabled.args = {
   checkboxStyle: 'chk--disabled',
   label: 'Disabled ',
+};
+
+Dark.args = {
+  checkboxStyle: 'chk--dark',
+  label: 'Dark ',
 };

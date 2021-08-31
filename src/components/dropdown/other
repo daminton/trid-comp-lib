@@ -1,0 +1,70 @@
+import React from 'react';
+import { CaretIcon } from '../..';
+ 
+export interface DropdownWidgetProps {
+  onClick: any;
+  text: string;
+}
+ 
+const DropdownWidget = ({ onClick, text }: DropdownWidgetProps) => {
+  return (
+    <div onClick={onClick}>
+      <div>{text}</div>
+      <div>
+        <CaretIcon />
+      </div>
+    </div>
+  );
+};
+ 
+export { DropdownWidget };
+
+import React from 'react';
+ 
+export interface DropdownItemProps {
+  text: any;
+  onClick: any;
+}
+ 
+const DropdownItem = ({ text, onClick = null }: DropdownItemProps) => (
+  <div onClick={onClick}>{text}</div>
+);
+ 
+export { DropdownItem };
+ 
+import React from 'react';
+ 
+export interface DropdownListProps {
+  items: any;
+}
+ 
+const DropdownList = ({ items }: DropdownListProps) => {
+  return <div>{items}</div>;
+};
+ 
+export { DropdownList };
+ 
+//import { DropdownItem } from './DropdownItem';
+//import { DropdownWidget } from './DropdownWidget';
+//export { Dropdown };
+/*      <div>
+      <DropdownWidget
+        onClick={() => {
+          console.log('click on widget');
+        }}
+        text="thingamajig"
+      />
+      <select>
+        {tabs.map((element: any) => (
+          <DropdownItem
+            onClick={() => {
+              console.log('click on DropdownItem');
+            }}
+            text={element}
+          ></DropdownItem>
+        ))}
+      </select>
+    </div> 
+  );
+}; */
+

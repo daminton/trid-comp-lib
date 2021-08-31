@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import './Checkbox.css';
 
 export interface CheckboxProps {
   label: any;
   checkboxStyle: any;
 }
 
-const STYLES = ['chk--primary', 'chk--disabled'];
+const STYLES = ['chk--light', 'chk--disabled', 'chk--dark'];
 
 const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
   const [checked, setChecked] = useState(false);
@@ -16,7 +17,7 @@ const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
     : STYLES[0];
 
   return (
-    <label>
+    <React.Fragment>
       <span>{label}</span>
       <input
         className={`chk ${checkCheckboxStyle}`}
@@ -24,7 +25,7 @@ const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
         onChange={handleClick}
         disabled={checkboxStyle === 'chk--disabled' ? true : false}
       />
-    </label>
+    </React.Fragment>
   );
 };
 

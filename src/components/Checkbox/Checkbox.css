@@ -1,1 +1,23 @@
+.chk {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
 
+.chk--light {
+  background-color: #fefefe;
+}
+
+span.chk--dark {
+  color: white;
+}
+
+.chk--dark {
+  background-color: #3f3f3f;
+}
+
+.chk--disabled {
+  cursor: not-allowed;
+}

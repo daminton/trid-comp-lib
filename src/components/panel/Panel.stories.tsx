@@ -13,6 +13,7 @@ const Template: Story = (args) => <Panel panelStyle {...args} />;
 
 export const Default = Template.bind({});
 export const Radius = Template.bind({});
+export const Small = Template.bind({});
 
 Default.args = {
   panelStyle: 'default',
@@ -20,4 +21,8 @@ Default.args = {
 
 Radius.args = {
   panelStyle: 'radius',
+};
+
+Small.args = {
+  panelStyle: 'small',
 };
