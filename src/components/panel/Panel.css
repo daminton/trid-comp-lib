@@ -1,4 +1,4 @@
-.default {
+.pnl--default {
   background-color: black;
   width: 700px;
   height: 100px;
@@ -6,7 +6,7 @@
   border: 25px;
 }
 
-.radius {
+.pnl--radius {
   border-radius: 20px;
   background-color: black;
   width: 700px;
@@ -15,7 +15,7 @@
   border: 25px;
 }
 
-.small {
+.pnl--small {
   background-color: darkgrey;
   padding: 5px 20px;
   margin: 3px;

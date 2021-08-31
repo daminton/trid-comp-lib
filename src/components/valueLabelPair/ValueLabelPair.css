@@ -1,7 +1,19 @@
-.stacked {
+.vlp--stacked--light {
+  color: black;
   display: inline-block;
 }
 
-.inline {
+.vlp--inline--light {
+  color: black;
+  display: flex;
+}
+
+.vlp--stacked--dark {
+  color: lightgrey;
+  display: inline-block;
+}
+
+.vlp--inline--dark {
+  color: lightgrey;
   display: flex;
 }

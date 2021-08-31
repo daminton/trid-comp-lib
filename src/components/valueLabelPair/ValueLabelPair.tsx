@@ -8,10 +8,10 @@ export interface ValueLabelPairProps {
 }
 
 const STYLES = [
-  'VLP--stacked--Light',
-  'VLP--stacked--Light',
-  'VLP--stacked--dark',
-  'VLP--inline--dark',
+  'vlp--stacked--light',
+  'vlp--inline--light',
+  'vlp--stacked--dark',
+  'vlp--inline--dark',
 ];
 
 const ValueLabelPair = ({ variant, label, value }: ValueLabelPairProps) => {
@@ -19,15 +19,7 @@ const ValueLabelPair = ({ variant, label, value }: ValueLabelPairProps) => {
   return (
     <div>
       <div className={`vlp ${checkVariant}`}>
-        <label
-          style={
-            checkVariant === 'VLP--stacked--Light' || 'VLP--stacked--Light'
-              ? { color: 'lightgray' }
-              : { color: 'black' }
-          }
-        >
-          {label}
-        </label>
+        <label>{label}</label>
         <div>{value}</div>
       </div>
     </div>

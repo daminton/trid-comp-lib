@@ -16,13 +16,13 @@ export const Radius = Template.bind({});
 export const Small = Template.bind({});
 
 Default.args = {
-  panelStyle: 'default',
+  panelStyle: 'pnl--default',
 };
 
 Radius.args = {
-  panelStyle: 'radius',
+  panelStyle: 'pnl--radius',
 };
 
 Small.args = {
-  panelStyle: 'small',
+  panelStyle: 'pnl--small',
 };
