@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../button';
 
 export interface ButtonGroupProps {
   buttons: Array<any>;
@@ -7,17 +6,11 @@ export interface ButtonGroupProps {
 
 const ButtonGroup = ({ buttons }: ButtonGroupProps) => {
   return (
-    <>
-      {buttons.map((buttonLabel, i) => (
-        <Button
-          key={i}
-          buttonName={buttonLabel}
-          buttonSize={buttonSize}
-          buttonStyle={buttonStyle}
-          onClick={onClick}
-        />
+    <div>
+      {buttons.map((button) => (
+        <div>{button}</div>
       ))}
-    </>
+    </div>
   );
 };
 
