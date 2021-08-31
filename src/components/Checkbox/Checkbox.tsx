@@ -18,7 +18,15 @@ const Checkbox = ({ label, checkboxStyle }: CheckboxProps) => {
 
   return (
     <React.Fragment>
-      <span>{label}</span>
+      <span
+        style={
+          checkboxStyle === 'chk--dark'
+            ? { color: 'lightgray' }
+            : { color: 'black' }
+        }
+      >
+        {label}
+      </span>
       <input
         className={`chk ${checkCheckboxStyle}`}
         type="checkbox"
