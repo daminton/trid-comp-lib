@@ -24,8 +24,50 @@ Default.args = {
     />,
     <Button
       buttonName="sample"
-      buttonSize="btn--large"
+      buttonSize="btn--medium"
       buttonStyle="btn--dark"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="sample"
+      buttonSize="btn--small"
+      buttonStyle="btn--dark"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="sample"
+      buttonSize="btn--large"
+      buttonStyle="btn--light"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="sample"
+      buttonSize="btn--medium"
+      buttonStyle="btn--light"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="sample"
+      buttonSize="btn--small"
+      buttonStyle="btn--light"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="Orchestrate"
+      buttonStyle="btn--orchestrate"
+      buttonSize="btn--large"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="Orchestrate"
+      buttonStyle="btn--orchestrate"
+      buttonSize="btn--medium"
+      onClick={() => {}}
+    />,
+    <Button
+      buttonName="Orchestrate"
+      buttonStyle="btn--orchestrate"
+      buttonSize="btn--small"
       onClick={() => {}}
     />,
   ],
