@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '../..';
 import './Button.css';
 
 export interface ButtonProps {
@@ -6,9 +7,17 @@ export interface ButtonProps {
   onClick: any;
   buttonStyle: any;
   buttonSize: any;
+  buttonIcon: any;
 }
 
-const STYLES = ['btn--dark', 'btn--light', 'btn--disabled', 'btn--orchestrate'];
+const STYLES = [
+  'btn--dark',
+  'btn--light',
+  'btn--disabled',
+  'btn--orchestrate',
+  'btn--icon--dark',
+  'btn--icon--light',
+];
 
 const SIZES = ['btn--small', 'btn--medium', 'btn--large'];
 
@@ -17,6 +26,7 @@ const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
+  buttonIcon,
 }: ButtonProps) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -29,6 +39,7 @@ const Button = ({
       type="button"
       disabled={checkButtonStyle === 'btn--disabled' ? true : false}
     >
+      <Icon variant={buttonIcon} />
       {buttonName}
     </button>
   );

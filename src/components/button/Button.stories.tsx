@@ -1,6 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { Button } from './Button';
+import { SearchIcon } from '../..';
 
 const meta: Meta = {
   title: 'Button',
@@ -9,7 +10,14 @@ const meta: Meta = {
     buttonName: { control: 'text' },
     buttonStyle: {
       control: 'select',
-      options: ['btn--dark', 'btn--light', 'btn--disabled', 'btn--orchestrate'],
+      options: [
+        'btn--dark',
+        'btn--light',
+        'btn--disabled',
+        'btn--orchestrate',
+        'btn--icon--dark',
+        'btn--icon--light',
+      ],
     },
 
     buttonSize: {
@@ -22,7 +30,7 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story = (args) => (
-  <Button buttonName onClick buttonStyle buttonSize {...args} />
+  <Button buttonName onClick buttonStyle buttonSize buttonIcon {...args} />
 );
 
 export const LargeDark = Template.bind({});
@@ -32,6 +40,7 @@ export const Dark = Template.bind({});
 export const Light = Template.bind({});
 export const Disabled = Template.bind({});
 export const Orchestrate = Template.bind({});
+export const Icon = Template.bind({});
 
 LargeDark.args = {
   buttonName: 'LargeDark',
@@ -72,4 +81,11 @@ Disabled.args = {
 Orchestrate.args = {
   buttonName: 'Orchestrate',
   buttonStyle: 'btn--orchestrate',
+};
+
+Icon.args = {
+  buttonName: 'Icon',
+  buttonStyle: 'btn--icon--light',
+  buttonSize: 'btn--medium',
+  buttonIcon: <SearchIcon />,
 };
