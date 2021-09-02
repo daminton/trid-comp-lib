@@ -5,6 +5,12 @@ import { Panel } from './Panel';
 const meta: Meta = {
   title: 'Panel',
   component: Panel,
+  argTypes: {
+    panelStyle: {
+      control: 'select',
+      options: ['pnl--default', 'pnl--radius', 'pnl--small'],
+    },
+  },
 };
 
 export default meta;

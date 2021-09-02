@@ -1,4 +1,5 @@
 import React from 'react';
+import './ButtonGroup.css';
 
 export interface ButtonGroupProps {
   buttons: Array<any>;

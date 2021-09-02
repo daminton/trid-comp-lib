@@ -5,6 +5,18 @@ import { Button } from './Button';
 const meta: Meta = {
   title: 'Button',
   component: Button,
+  argTypes: {
+    buttonName: { control: 'text' },
+    buttonStyle: {
+      control: 'select',
+      options: ['btn--dark', 'btn--light', 'btn--disabled', 'btn--orchestrate'],
+    },
+
+    buttonSize: {
+      control: 'select',
+      options: ['btn--small', 'btn--medium', 'btn--large'],
+    },
+  },
 };
 
 export default meta;

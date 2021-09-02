@@ -5,6 +5,13 @@ import { Checkbox } from './Checkbox';
 const meta: Meta = {
   title: 'Checkbox',
   component: Checkbox,
+  argTypes: {
+    checkboxStyle: {
+      control: 'select',
+      options: ['chk--light', 'chk--disabled', 'chk--dark'],
+    },
+    label: { control: 'text' },
+  },
 };
 
 export default meta;

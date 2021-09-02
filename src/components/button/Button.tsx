@@ -27,6 +27,7 @@ const Button = ({
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}
       type="button"
+      disabled={checkButtonStyle === 'btn--disabled' ? true : false}
     >
       {buttonName}
     </button>

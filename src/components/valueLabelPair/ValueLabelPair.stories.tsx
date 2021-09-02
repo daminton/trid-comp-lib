@@ -5,6 +5,19 @@ import { ValueLabelPair } from './ValueLabelPair';
 const meta: Meta = {
   title: 'ValueLabelPair',
   component: ValueLabelPair,
+  argTypes: {
+    variant: {
+      control: 'select',
+      options: [
+        'vlp--stacked--light',
+        'vlp--inline--light',
+        'vlp--stacked--dark',
+        'vlp--inline--dark',
+      ],
+    },
+    label: { control: 'text' },
+    value: { control: 'text' },
+  },
 };
 
 export default meta;
