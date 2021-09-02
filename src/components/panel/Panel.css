@@ -1,5 +1,5 @@
 .pnl--default {
-  background-color: black;
+  background-color: #282828;
   width: 700px;
   height: 100px;
   padding: 25px;
@@ -8,7 +8,7 @@
 
 .pnl--radius {
   border-radius: 20px;
-  background-color: black;
+  background-color: #282828;
   width: 700px;
   height: 100px;
   padding: 25px;

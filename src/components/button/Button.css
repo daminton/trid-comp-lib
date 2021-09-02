@@ -10,7 +10,7 @@
 }
 
 .btn--light {
-  background-color: black;
+  background-color: 282828;
   color: white;
   border: 'none';
   border-radius: 100;
@@ -26,7 +26,7 @@
 }
 
 .btn--disabled {
-  background-color: black;
+  background-color: 282828;
   color: white;
   border: 'none';
   border-radius: 100;
@@ -48,7 +48,7 @@
 }
 
 .btn--icon--light {
-  background-color: black;
+  background-color: #282828;
   color: white;
   border: 'none';
   border-radius: 100;
