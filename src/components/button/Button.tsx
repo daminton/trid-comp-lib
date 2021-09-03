@@ -45,6 +45,4 @@ const Button = ({
   );
 };
 
-Button.propTypes;
-
 export { Button };
