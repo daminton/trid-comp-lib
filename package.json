@@ -89,6 +89,7 @@
     "@storybook/addon-viewport": "^6.3.7",
     "@storybook/core": "^6.3.7",
     "@storybook/react-docgen-typescript-plugin": "^1.0.1",
-    "storybook-addon-outline": "^1.4.1"
+    "storybook-addon-outline": "^1.4.1",
+    "trid-comp-lib": "^0.1.15"
   }
 }
