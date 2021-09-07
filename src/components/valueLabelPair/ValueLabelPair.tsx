@@ -1,5 +1,5 @@
 import React from 'react';
-import './ValueLabelPair.css';
+import '../styles.css';
 
 export interface ValueLabelPairProps {
   variant: any;

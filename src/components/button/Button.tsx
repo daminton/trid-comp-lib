@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from '../..';
-import './Button.css';
+import '../styles.css';
 
 export interface ButtonProps {
   buttonName: any;

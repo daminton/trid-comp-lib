@@ -2,6 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import React from 'react';
 import { ButtonGroup } from './ButtonGroup';
 import { Button } from '../button/Button';
+import { SearchIcon } from '..';
 
 const meta: Meta = {
   title: 'ButtonGroup',
@@ -69,6 +70,13 @@ Default.args = {
       buttonStyle="btn--orchestrate"
       buttonSize="btn--small"
       onClick={() => {}}
+    />,
+    <Button
+      buttonName="icon"
+      buttonStyle="btn--icon--dark"
+      buttonSize="btn--small"
+      onClick={() => {}}
+      buttonIcon={<SearchIcon />}
     />,
   ],
 };

@@ -55,6 +55,7 @@
   border: 'none';
   border-radius: 100;
   padding: 10;
+  display: flex;
 }
 .btn--icon--dark {
   background-color: lightgray;
@@ -62,6 +63,7 @@
   border: 'none';
   border-radius: 100;
   padding: 10;
+  display: flex;
 }
 
 /* sizes */
@@ -155,4 +157,11 @@ span.chk--dark {
 .vlp--inline--dark {
   color: lightgrey;
   display: flex;
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  filter: drop-shadow(0px 0px 1px lightgray);
 }
